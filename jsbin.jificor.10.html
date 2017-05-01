@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by bgabor91 (http://jsbin.com/jificor/10/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Bin</title>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style id="jsbin-css">
+/* css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+html{
+  background-color:#CECFD5;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  /*align-items: center; */
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 80px;
+  }
+
+/* left column*/
+
+#container{
+  width: 800px;
+  max-width: calc(100vw-10px);
+ /* border: 2px solid green;*/
+}
+
+#profile{
+  width: 450px;
+  height: auto;
+  background-color:#1D77C3;
+  max-width: calc(100vw-10px);
+  float:left;
+  border-radius: 2%;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  border-radius: 2%;
+   padding: 1.5px;
+  background-color: #666;
+  filter: grayscale(30%);
+}
+
+img:hover {
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(10%);
+}
+
+
+h1{
+  text-align: center;
+  color: #02160F;
+  position: relative;
+  top: -50px;
+  font-size: 1.8em;
+  opacity: 0.8;
+}
+
+h1:hover{
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+#contact{
+  text-align: center;
+} 
+
+#contact p{
+  line-height: 25px;
+}
+
+#contact-list{
+  padding-bottom: 20px;
+  color: #02160F;
+}
+
+.scaleTo:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+
+#contact-community{
+  border-top: 1px solid black;
+  opacity: 0.8;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  color: #02160F;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#contact li {
+  display: inline;
+}
+
+/*right column */
+
+#description{
+  width: 350px;
+  height: auto;
+   max-width: calc(100vw-10px);
+  background-color: white;
+  float:left;
+  margin: 0 auto;
+  border-radius: 2%;
+  
+}
+
+#education{
+  margin: 40px;
+  color: #02160F;
+  border-bottom: 1px solid #02160F;
+}
+
+#developer{
+  font-size: 130%;
+  padding-bottom: 20px;
+  padding-left:5px;
+  border-bottom: 1px solid #02160F;
+}
+
+#developer h2, h3{
+  font-variant: small-caps;
+}
+
+#skills h3{
+  text-decoration: underline;
+}
+
+#skills{
+  font-size: 120%;
+  line-height: 25px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 40px;
+}
+
+#skills li{
+  padding-left: 5px;
+  list-style-type: square;
+ font-size: 80%;
+  margin-left: 40px;
+}
+
+#experience{
+  margin: 40px;
+  color: #02160F;
+  border-bottom: 1px solid #02160F;
+}
+
+#about-me{
+  font-size: 130%;
+  padding-bottom: 20px;
+  padding-left:5px;
+  border-bottom: 1px solid #02160F;
+}
+
+#about-me h2{
+  font-variant: small-caps;
+}
+
+#about-me2{
+  font-size: 100%;
+  line-height: 25px;
+  margin: 25px
+}
+
+
+@media screen and (max-width: 799px){
+  body{
+    margin: 0 auto;
+  }
+  
+  #container{
+    width: 100%;
+  }
+  
+  #profile{
+    width: 56%;
+  }
+  #description{
+  width: 44%;
+  }
+ }
+
+@media screen and (max-width: 640px){
+   body{
+    margin: 0 auto;
+  }
+  
+  #profile{
+    width: 100%;
+  }
+  #description{
+  width: 100%;
+  }
+ }
+
+@media screen and (max-width: 320px){
+   #container{
+    width: 320px;
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+ <div id="container">
+ <div id="profile">
+      <div id="profile-img">
+        <a href="http://imgur.com/ywzdOLr"><img src="http://i.imgur.com/ywzdOLr.jpg" title="source: imgur.com" /></a>
+        <h1>BARANYI GABOR</h1>
+        
+      </div>
+   <div id="contact">
+     <div id="contact-list">
+       <p class="scaleTo"><i class="fa fa-map-marker fa"></i>    Szeged, Hungary</p>
+       
+       <p><i class="fa fa-phone" aria-hidden="true"></i>   Phone:</p>
+       <p class="scaleTo">0036709672948</p>
+         <p><i class="fa fa-envelope" aria-hidden="true"></i>   Email:</p>
+       <p class="scaleTo">bgabor91@gmail.hu</p>
+       
+      
+     </div>
+     <div id="contact-community">
+       <section class="links">
+        <h2 class="scaleTo">Contact me via:</h2>
+        <ul>
+          <li><a href="https://facebook.com/#" title="Twitter" target="_blank" class="social-icon"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
+          <li><a href="https://linkedin.com/#" title="Instagram" target="_blank" class="social-icon"><i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></a></li>
+          <li><a href="https://plus.google.com/#" title="Behance" target="_blank" class="social-icon"><i class="fa fa-2x fa-google-plus-square" aria-hidden="true"></i></a></li>
+        </ul>
+      </section>
+       
+     </div>
+   </div>
+  </div>
+ <div id="description">
+   <div id="education">
+     <div id="developer">
+       <h2>Website Developer</h2>
+     </div>
+     <div id="skills">
+       <h3>Skills:</h3>
+         <ul>
+           <li>HTML</li>
+           <li>CSS</li>
+           <li>JavaScript</li>
+           <li>Bootstrap</li>
+           <li>jQuery</li>
+           <li>Angular JS</li>
+         </ul>
+     </div>
+     
+  
+  </div>
+  <div id="experience">
+     <div id="about-me">
+       <h2>About Me</h2>
+     </div>
+    <div id="about-me2">
+      <p>I love coding and I enjoy to learn coding. I am a full beginner developer with no job experience but I make some "hobby" projects. I would like to work as a full time developer in the future. I would like to build very nice and fantastic websites and I hope you and me will work together succesfully.</p>
+      
+    </div>
+  </div>
+  </div>
+  
+ </div>
+</body>
+</html>
